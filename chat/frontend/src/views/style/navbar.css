@@ -1,0 +1,295 @@
+
+
+
+
+
+:root {
+    --purple-50: #f5f3ff;
+    --purple-100: #ede9fe;
+    --purple-200: #ddd6fe;
+    --purple-300: #c4b5fd;
+    --purple-400: #a78bfa;
+    --purple-500: #8b5cf6;
+    --purple-600: #7c3aed;
+    --purple-700: #6d28d9;
+    --purple-800: #5b21b6;
+    --purple-900: #4c1d95;
+    --purple-950: #2e1065;
+    --violet-500: #8b5cf6;
+    --violet-600: #7c3aed;
+  }
+  
+  /* Gradient backgrounds */
+  .bg-gradient-purple {
+    background: linear-gradient(135deg, var(--purple-600), var(--violet-600));
+  }
+  
+  .bg-gradient-gray {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  }
+  
+  /* Text gradients */
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .text-gradient-dark {
+    background-image: linear-gradient(to bottom right, #212529, #495057);
+  }
+  
+  .text-gradient-purple {
+    background-image: linear-gradient(to right, var(--purple-600), var(--violet-600));
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Blur effects */
+  .blur-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+    opacity: 0.5;
+    z-index: -1;
+  }
+  
+  /* Custom card styles */
+  .card-feature {
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(124, 58, 237, 0.1);
+  }
+  
+  .card-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.1);
+  }
+  
+  .feature-icon-wrapper {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(124, 58, 237, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .card-feature:hover .feature-icon-wrapper {
+    transform: translateX(-50%) scale(1.1);
+  }
+  
+  /* Phone mockup */
+  .phone-mockup {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    border-radius: 40px;
+    border: 14px solid #343a40;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .phone-status-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 24px;
+    background-color: #343a40;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+  
+  .phone-screen {
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 28px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Custom badge */
+  .badge-pill-custom {
+    border-radius: 50rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    background-color: white;
+    color: var(--purple-700);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Sticky header */
+  .header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    backdrop-filter: blur(10px);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+  }
+  
+  /* Gradient background */
+  .bg-gradient-radial {
+    background-image: radial-gradient(ellipse at top, var(--purple-100), white, white);
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+  }
+  
+  /* Custom buttons */
+  .btn-gradient {
+    background: linear-gradient(to right, var(--purple-600), var(--violet-600));
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-gradient:hover {
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3);
+    color: white;
+  }
+  
+  .btn-outline-gradient {
+    background: transparent;
+    border: 1px solid var(--purple-600);
+    color: var(--purple-600);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-gradient:hover {
+    background-color: rgba(124, 58, 237, 0.05);
+    color: var(--purple-700);
+  }
+  
+  /* Pricing cards */
+  .pricing-card {
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing-popular {
+    border: 2px solid var(--purple-500);
+    background: linear-gradient(to bottom right, var(--purple-600), var(--violet-600));
+    color: white;
+  }
+  
+  .pricing-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, #fbbf24, #f59e0b);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    border-radius: 50rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Vertical timeline */
+  .timeline-container {
+    position: relative;
+  }
+
+  .timeline{
+    padding-left: 65px;
+  }
+  
+  
+  .timeline-line {
+    
+    position: absolute;
+    left: 32px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--purple-600), var(--violet-600), #6366f1);
+  }
+  
+  /* CTA section */
+  .cta-section {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .cta-blur {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.2;
+    filter: blur(50px);
+  }
+
+  .pages{
+    font-weight: 500;
+  }
+
+
+  /* In your global CSS */
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+section {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+
+@media (max-width:375){
+  .todo{
+    display: none;
+  }
+  
+}
+
+
+.logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.home{
+  padding-left: 10px;
+}
+
+
+.smallscreen{
+  height: 90%;
+}
+
+.app {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.member{
+  border-radius: 70px;
+}

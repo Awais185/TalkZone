@@ -1,0 +1,254 @@
+/* Universal CSS Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #f9f9f9;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 5px;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #060606;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraphs */
+  p {
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  /* Links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .hero h1{
+    background-image: url("../../Images/back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-size: 600px 200px;
+    background-repeat: no-repeat;
+    background-position: -20px -5px;
+  }
+  
+
+  .hero h1{
+    background-image:url("../../Images/back.jpg") ;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .hero h2{
+    font-size: 40px;
+  }
+
+  .hero p{
+    font-size: 18px;
+  }
+  .hero .form{
+    display: flex;
+    gap: 10px;
+  }
+  .hero input{
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    border: 1px solid #f90000;
+    border-radius: 5px;
+  }
+  .hero button{
+    width: 140px;
+    height: 43px;
+    padding: 10px;
+    border: none;
+    background-color: #f90000;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .hero img{
+    width: 400px;
+    height: 300px;
+    border-radius: 800px; 
+  }
+
+  .hero .man{
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .man h2{
+    width: 40%;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+  }
+
+  .man h3{
+    padding-top: 10px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+  }
+
+  .man p{
+    border-radius: 3px;
+    padding-top: 7px;
+    height: 40px;
+    background-color: #eeeaea;
+    font-size: 18px;
+  }
+
+
+  .frames img{
+    margin-top: 10px;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+
+  }
+
+
+
+  footer a:hover {
+    color: #f90000;
+  }
+  
+  footer h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  footer ul li {
+    margin-bottom: 2px;
+  }
+  
+  footer i {
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  footer i:hover {
+    color: #000000;
+  }
+  
+
+  .footor{
+    color: white;
+  }
+
+  footer {
+    color: white !important;
+  }
+  
+  footer a, footer a.nav-link, footer p, footer li, footer h5, footer i {
+    color: white !important;
+  }
+
+  .icons a {
+    padding-right: 10px;
+    gap: 10px;
+  }
+
+  .footor{
+    background-color: #726a6a;
+
+  }
+
+
+   /* Additional custom styles */
+   @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .bg-gradient-purple {
+    background: linear-gradient(to right, #7c3aed, #a855f7);
+  }
+  .text-gradient-purple {
+    background: linear-gradient(to right, #7c3aed, #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .newfootor{
+    margin-top: 100px;
+  }
+
+
+  @media (max-width:375){
+    .man p{
+      border-radius: 3px;
+      padding-top: 7px;
+      height: 40px;
+      background-color: #eeeaea;
+      font-size: 18px;
+    }
+    .app {
+      font-weight: 500;
+      font-size: 30px;
+  }
+  .heading {
+    font-size: 30px;
+    font-weight: 500!important;
+  }
+
+  }
+
+
+  .heading{
+      font-weight: 700!important;
+  }
+
+  

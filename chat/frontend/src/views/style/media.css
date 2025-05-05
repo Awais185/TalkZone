@@ -1,0 +1,48 @@
+/* Default (desktop): let Bootstrap w-100 handle size */
+  
+  /* Medium devices (tablets, 768px and below) */
+  @media (max-width: 768px) {
+    .hero img {
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  
+  /* Small devices (phones, 576px and below) */
+  @media (max-width: 576px) {
+    .hero img {
+      width: 70%;
+      margin: 0 auto;
+      display: block;
+    }
+    .hero h1{
+        font-size: 56px;
+        background-image: url("../../Images/back.jpg");
+        background-size: cover;
+        background-position: center;
+        background-size: 400px 200px;
+        background-repeat: no-repeat;
+        background-position: -20px -25px;
+      }
+      .hero .man {
+        padding-left: 50px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (max-width: 375px) {
+        .hero h1 {
+          font-size: 56px;
+          background-image: url("../../Images/back.jpg");
+          background-size: cover;
+          background-position: center;
+          background-size: 400px 200px;
+          background-repeat: no-repeat;
+          background-position: -45px -35px;
+        }
+        
+    }
+
+    }
+  
